@@ -1,0 +1,21 @@
+.opciones{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    background-color: #E0E0E0;
+    padding: .5em;
+    height: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.izquierda {
+    float: left;
+}
+
+.derecha {
+    float: right;
+}

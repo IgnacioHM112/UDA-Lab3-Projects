@@ -1,0 +1,58 @@
+/*----------------------------------TEXTO GENERAL-----------------------------------*/
+ul, ul li{  margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form{ margin: 0; padding: 0; }
+.clear{ clear: both;}
+
+/*----------------------------------CUADRO GENERAL-----------------------------------*/
+#contenedor {width: 90%; max-width: 900px; margin: 0 auto;}
+
+/*----------------------------------UBICACION CUADROS-----------------------------------*/
+#cabecera{ clear: both; }
+#menu { clear: both; }
+#lateral { float: left; width: 20.5%; }
+#contenido { float: right; width: 78%; }
+#contenido #principal { float: left; width: 74%; padding: 0.5em;}
+#contenido #secundario { float: right; width: 20%; padding: 0.5em;}
+#pie { clear: both; }
+
+/*----------------------------------CABECERA-----------------------------------*/
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+#cabecera{padding: 1em;}
+
+/*----------------------------------MENU-----------------------------------*/
+#menu ul#menu_principal li { display: inline; float: left; }
+#menu{padding: 0.5em; margin-bottom: 0.5em;}
+
+/*----------------------------------IMAGEN-----------------------------------*/
+#contenido #principal .articulo img { width: 90px; float: left; margin: 0.5em;}
+.articulo{margin: 1em;}
+
+/*----------------------------------LATERAL-----------------------------------*/
+#lateral #publicidad, #lateral #noticias{padding: 0.5em; margin-top: 1em;}
+
+/*----------------------------------PIE DE PAGINA-----------------------------------*/
+#pie .enlaces   { float: left; }
+#pie .copyright { float: right; }
+#pie{padding-top: 0.5em; padding-bottom: 0.5em; margin-top: 1em;}
+
+
+/*-------------------------------EJERCICIOS 4-----------------------------------*/
+
+/*----------------------------------PUNTO 1-----------------------------------*/
+
+
+/*----------------------------------PUNTO 2-----------------------------------*/
+#menu{border-bottom: 1px solid #004C99}
+
+/*----------------------------------PUNTO 3-----------------------------------*/
+#noticias{border: 1px solid #C5C5C5}
+
+/*----------------------------------PUNTO 4-----------------------------------*/
+#publicidad{border: 1px dashed #CC6600}
+
+/*----------------------------------PUNTO 5-----------------------------------*/
+#contenido #secundario{border: 1px solid #CC6600}
+
+/*----------------------------------PUNTO 6-----------------------------------*/
+#pie{border-top: 1px solid #C5C5C5; border-bottom: 1px solid #C5C5C5}

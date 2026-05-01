@@ -1,0 +1,41 @@
+/* Diseño elástico centrado con un ancho de 60 em */
+#contenedor {
+    width: 60em;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado de nivel 1 centrado */
+h1 {
+    text-align: center;
+}
+
+/* Organización en dos columnas (Datos y Descripción) */
+.fila-superior {
+    overflow: hidden; /* Limpia el float */
+    margin-bottom: 2em;
+}
+
+.columna-datos {
+    float: left;
+    width: 16em;
+}
+
+.columna-descripcion {
+    float: right;
+    width: 44em;
+}
+
+/* Lista de contenido en tres columnas del mismo ancho */
+.lista-tres-columnas {
+    column-count: 3;
+    column-gap: 2em;
+    list-style-position: inside; /* Ajuste para que las viñetas no queden fuera */
+    padding: 0;
+}
+
+/* Evitar que los elementos de la lista se corten entre columnas */
+.lista-tres-columnas li {
+    break-inside: avoid-column;
+    margin-bottom: 1em;
+}

@@ -1,0 +1,87 @@
+/* Tipografías y alineación general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, .subtitulo {
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+/* Estilo de los bloques de formulario */
+fieldset {
+    border: 1px solid #999;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.85em;
+}
+
+/* Layout de los campos */
+.campo {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 250px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s; /* Suaviza el cambio de color */
+}
+
+/* Estilos de interactividad solicitados */
+
+/* Fondo rojo al pasar el ratón por encima */
+input:hover, select:hover, textarea:hover {
+    background-color: #FF0000;
+}
+
+/* Fondo amarillo cuando el control tiene el foco (clic o tabulador) */
+input:focus, select:focus, textarea:focus {
+    background-color: #FFFF00;
+    outline: none; /* Quita el borde azul por defecto de los navegadores */
+}
+
+/* Ajustes menores para alineación de botones y radio/checkbox */
+.opciones label, .aceptacion label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.boton-contenedor {
+    text-align: center;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}

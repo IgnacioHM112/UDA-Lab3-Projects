@@ -1,0 +1,51 @@
+/* Estilos base (Móvil - Una columna) */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.contenedor-cv {
+    display: flex;
+    flex-direction: column; /* Por defecto una columna */
+    gap: 20px;
+}
+
+/* Tablet (De 600px a 1200px - Dos columnas) */
+@media (min-width: 600px) and (max-width: 1200px) {
+    .contenedor-cv {
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que la tercera sección baje */
+    }
+    .columna {
+        flex: 1 1 45%; /* Ocupan aproximadamente la mitad */
+    }
+}
+
+/* Escritorio (A partir de 1200px - Tres columnas) */
+@media (min-width: 1200px) {
+    .contenedor-cv {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .columna {
+        flex: 1; /* Las tres columnas se reparten el ancho equitativamente */
+    }
+}

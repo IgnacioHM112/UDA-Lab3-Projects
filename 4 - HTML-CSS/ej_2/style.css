@@ -1,0 +1,93 @@
+/* Títulos principales */
+#titulo {
+    color: teal;
+}
+
+#subtitulo {
+    color: blue;
+}
+
+/* Colores en el primer párrafo */
+strong {
+    color: red;
+}
+
+.destacado {
+    color: orange;
+}
+
+/* Colores en el segundo párrafo */
+#subtitulo + p a {
+    color: red;
+}
+
+#subtitulo + p a em {
+    color: blue;
+}
+
+.especial {
+    color: purple;
+}
+
+/* Estilos de la Tabla */
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table caption {
+    color: blue;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* Colores específicos de la tabla */
+thead th.especial {
+    color: orange;
+}
+
+tfoot th {
+    color: red;
+}
+
+tbody th.especial {
+    color: orange;
+}
+
+tbody th {
+    color: red;
+}
+
+/* Celdas del cuerpo */
+tbody td {
+    color: green;
+}
+
+tbody td em {
+    color: olive;
+}
+
+tbody td strong {
+    color: orange;
+}
+
+/* Sección inferior (div adicional) */
+#adicional p:first-child {
+    color: olive;
+}
+
+#adicional p span {
+    color: olive;
+}
+
+#adicional #especial {
+    color: fuchsia;
+}
+
+#adicional a {
+    color: green;
+}

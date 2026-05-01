@@ -1,0 +1,22 @@
+/* Borde inferior azul sólido para h1 */
+h1 {
+    border-bottom: 2px solid #00F;
+}
+
+/* Borde completo gris sólido para h2 */
+h2 {
+    border: 2px solid #AAA;
+}
+
+/* Lista de datos: borde superior e inferior rojo punteado */
+.datos-libro {
+    border-top: 4px dotted #F00;
+    border-bottom: 4px dotted #F00;
+    list-style-type: disc; /* Mantiene las viñetas según la imagen */
+}
+
+/* Lista de contenido: borde completo verde con guiones */
+.contenido-libro {
+    border: 2px dashed #0F0;
+    list-style-type: disc;
+}
