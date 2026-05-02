@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios JS Arrays</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <h1>Ejercicios JS Arrays</h1>
+
+        <!-- Resultados de ejercicios en consola -->
+        <h2>Resultados de Ejercicios (1-11)</h2>
+        <div id="resultados"></div>
+
+        <!-- Formulario para ejercicio 11 -->
+        <h2>Ejercicio 11: Pedir Cadenas</h2>
+        <form id="cadenasForm">
+            <label for="cadenaInput">Ingresa una cadena:</label>
+            <input type="text" id="cadenaInput">
+            <button type="button" onclick="agregarCadena()">Agregar</button>
+            <button type="button" onclick="finalizarCadenas()">Finalizar</button>
+            <p id="resultadoCadenas">Cadenas: </p>
+        </form>
+
+        <!-- Formulario para conversión Dólares a Pesos -->
+        <h2>Ejercicio 12: Dólares a Pesos</h2>
+        <form id="dolaresAPesosForm">
+            <label for="dolares">Dólares:</label>
+            <input type="number" id="dolares" step="0.01">
+            <button type="button" onclick="convertirDolaresAPesos()">Convertir</button>
+            <p id="resultadoDolares">Resultado: </p>
+        </form>
+
+        <!-- Formulario para conversión Pesos a Dólares -->
+        <h2>Ejercicio 13: Pesos a Dólares</h2>
+        <form id="pesosADolaresForm">
+            <label for="pesos">Pesos:</label>
+            <input type="number" id="pesos" step="0.01">
+            <button type="button" onclick="convertirPesosADolares()">Convertir</button>
+            <p id="resultadoPesos">Resultado: </p>
+        </form>
+
+        <!-- Formulario para conversión Centígrados a Fahrenheit -->
+        <h2>Ejercicio 14: Centígrados a Fahrenheit</h2>
+        <form id="celsiusAFahrenheitForm">
+            <label for="celsius">Centígrados:</label>
+            <input type="number" id="celsius" step="0.01">
+            <button type="button" onclick="convertirCelsiusAFahrenheit()">Convertir</button>
+            <p id="resultadoCelsius">Resultado: </p>
+        </form>
+
+        <!-- Ejercicio 15: Formulario de pedido de caja -->
+        <h2>Ejercicio 15: Pedido de caja</h2>
+        <form id="pedidoCajaForm">
+            <label for="nombreCliente">Nombre del cliente:</label>
+            <input type="text" id="nombreCliente" value="Pablo">
+
+            <label for="materialCaja">Material de la caja:</label>
+            <select id="materialCaja">
+                <option value="Madera">Madera</option>
+                <option value="Metal">Metal</option>
+                <option value="Plástico">Plástico</option>
+            </select>
+
+            <div class="radio-group">
+                <p>Seleccione unas dimensiones para la caja:</p>
+                <label><input type="radio" name="dimensionCaja" value="diminutas" checked> Diminuta</label>
+                <label><input type="radio" name="dimensionCaja" value="medianas"> Mediano</label>
+                <label><input type="radio" name="dimensionCaja" value="grandes"> Grande</label>
+            </div>
+
+            <label for="comentariosCaja">Comentarios:</label>
+            <textarea id="comentariosCaja">Que sea bonita</textarea>
+
+            <div class="footer-form">
+                <button type="button" onclick="enviarPedidoCaja()">Enviar</button>
+                <input type="text" id="resultadoCaja" readonly>
+            </div>
+        </form>
+
+        <!-- Ejercicio 16: Juego de número secreto -->
+        <h2>Ejercicio 16: Número secreto (0-5)</h2>
+        <form id="juegoSecretoForm">
+            <label for="numeroSecreto">Número secreto (0-5):</label>
+            <input type="number" id="numeroSecreto" min="0" max="5">
+            <button type="button" onclick="establecerNumeroSecreto()">Establecer secreto</button>
+            <br><br>
+            <label for="numeroAdivinar">Adivina el número:</label>
+            <input type="number" id="numeroAdivinar" min="0" max="5">
+            <button type="button" onclick="intentarAdivinar()">Adivinar</button>
+            <p id="resultadoJuego">Resultado: </p>
+        </form>
+
+        <!-- Ejercicio 17: Lista de nombres -->
+        <h2>Ejercicio 17: Agregar nombres</h2>
+        <form id="nombresForm">
+            <label for="nombreInput">Nombre:</label>
+            <input type="text" id="nombreInput">
+            <button type="button" onclick="agregarNombre()">Agregar</button>
+            <ul id="listaNombres"></ul>
+        </form>
+
+        <script src="app.js"></script>
+    </body>
+
+</html>

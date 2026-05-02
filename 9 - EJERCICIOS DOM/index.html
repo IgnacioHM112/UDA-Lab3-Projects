@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Ejercicios DOM</h1>
+
+        <section class="exercise">
+            <h2>Ejercicio 1: Cambiar texto</h2>
+            <p id="textoEj1">Texto original del elemento.</p>
+            <button id="btnCambiarTexto">Cambiar texto</button>
+        </section>
+
+        <section class="exercise">
+            <h2>Ejercicio 2: Evento click</h2>
+            <button id="btnMostrarMensaje">Haz clic aquí</button>
+            <p id="mensajeEj2" class="output"></p>
+        </section>
+
+        <section class="exercise">
+            <h2>Ejercicio 3: Agregar elemento a lista</h2>
+            <label for="itemLista">Nuevo elemento:</label>
+            <input type="text" id="itemLista" placeholder="Escribe un elemento">
+            <button id="btnAgregarLista">Agregar a la lista</button>
+            <ul id="listaDinamica"></ul>
+        </section>
+
+        <section class="exercise">
+            <h2>Ejercicio 4: Cambiar fondo al hacer clic</h2>
+            <div id="cajaFondo" class="box">Haz clic sobre esta caja</div>
+        </section>
+
+        <section class="exercise">
+            <h2>Ejercicio 5: Validar formulario</h2>
+            <form id="formValidacion">
+                <label for="nombreForm">Nombre</label>
+                <input type="text" id="nombreForm" required>
+                <label for="correoForm">Correo</label>
+                <input type="email" id="correoForm" required>
+                <button type="submit">Enviar formulario</button>
+            </form>
+            <p id="resultadoValidacion" class="output"></p>
+        </section>
+
+        <section class="exercise">
+            <h2>Ejercicio 6: Mostrar u ocultar elemento</h2>
+            <button id="btnToggleElemento">Mostrar / Ocultar</button>
+            <div id="elementoToggle" class="box small">Elemento para mostrar u ocultar</div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

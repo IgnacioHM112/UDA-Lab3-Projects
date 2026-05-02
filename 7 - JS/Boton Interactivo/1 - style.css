@@ -1,0 +1,39 @@
+/* Estilos generales para el fondo púrpura y botones naranja */
+nav {
+    background-color: #6a3d9a;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-boton, .nav-enlace {
+    background-color: #ff8c69;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border: none;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+/* Lógica de visibilidad */
+@media (max-width: 768px) {
+    .desaparece {
+        display: none; /* Se ocultan por defecto en móviles */
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav-boton {
+        display: none; /* El botón de menú no se ve en PC */
+    }
+    .nav-enlace {
+        display: inline-block; /* Los enlaces siempre se ven en PC */
+    }
+}
